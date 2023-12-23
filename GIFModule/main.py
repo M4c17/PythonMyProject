@@ -1,13 +1,5 @@
 import requests
 from PIL import Image
-import imageio as iio
-import glob
-from PIL import Image
-
-
-
-
-
 
 
 def photo_download():
@@ -17,9 +9,6 @@ def photo_download():
     with open(f"{photo_name}.jpg", "wb") as outfile:
         outfile.write(response.content)
 
-
-
-#Giriş
 while True:
 
     print("Gif için G\nFotoğraf indirmek için D\nÇıkmak için Q")
